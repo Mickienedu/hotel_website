@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- open sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Overpass:wght@500&family=Poppins:wght@100&family=Roboto+Mono:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
+
+    <!-- Link Swiper's CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>HOTEL WEBSITE</title>
+</head>
+
+<body>
+    <!-- all the content on the header -->
+    <div class="main-bg">
+        <div class="all-header">
+            <nav class="logo-name">
+                <img src="img/travel-icon2.png" alt="" class="logo">
+                <h2>Cruise-D</h2>
+            </nav>
+            <!-- navigation bar on the header including all the social media icons -->
+            <section>
+                <ul id="sidemenu">
+                    <li><a href="hotel.html">Home</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li> <i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-instagram"></i>
+                    </li>
+                    <li><i class="fab fa-whatsapp"></i></li>
+                    <!-- the onclick event added here is for the menu to close once click on -->
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <!-- here, the onclick attribute is to open the menu once click on -->
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </section>
+        </div>
+        <!-- the stars img for decoration -->
+        <div class="us">
+            <h1>Best Place To Stay</h1>
+            <nav class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </nav>
+            <!-- the paragraph below the stars -->
+            <p>CRUISE-D SUITES is one of the best luxury hotels in our state. We offer high-quality <br>
+                accommodation with a wide variety of rooms, additional services, and <br>
+                amenities available to all our guests.
+            </p>
+        </div>
+        <!-- how to book -->
+        <div class="new-bg">
+            <div class="new-parent">
+                <h6>ARRIVAL </h6>
+                <h1><input type="date"> Check-in <br> Date</h1>
+            </div>
+            <div class="new-parent">
+                <h6>DEPARTURE</h6>
+                <h1><input type="date"> Check-in <br> Date</h1>
+            </div>
+            <div class="new-parent">
+                <h6>ADULTS</h6>
+                <select name="dropdown" id="dropdown">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <!-- style="border: none;" -->
+            <div class="new-parent">
+                <h6>CHILDREN</h6>
+                <select name="dropdown" id="dropdown">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="new-parent" style="border: none;">
+                <button class="btn" type="button">Check Availability</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- third section, a room and about -->
+    <div id="about">
+        <h1>ABOUT <i>CRUISE-D SUITES</i></h1>
+        <div class="about-img-p">
+            <nav class="room1">
+                <img src="img/hotel-3.png" alt="" id="room1">
+            </nav>
+            <nav class="about-p">
+                <h2>Welcome to <i>CRUISE-D SUITES</i></h2>
+                <p>CRUISE-D SUITES is a family-owned hotel that desires to cater and provide 
+                    guests with personalized hospitality based on what they profer</p>
+                <p>While we aim to give you an authentic experience whenever you 
+                    stay with us, we also guarantee consistent high standards of 
+                    customer service at CRUISE-D. Contemporary amenities and timeless 
+                    elegance are reflected throughout every guest room at our luxury 
+                    hotel. We hope to make your stay unforgettable in the best way</p>
+            </nav>
+        </div>
+
+    </div>
+
+    <section id="slider">
+        <div class="container-slider">
+            <div class="subcontainer">
+                <div class="slider-wrapper">
+                    <div class="controller">
+                        <div>
+                            <h2>Choose your luxurious room</h2>
+                        </div>
+                        <div id="controls">
+                            <button class="previous"><i class="fas 
+                            fa-angle-left"></i></button>
+                            <button class="next"><i class="fas 
+                            fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="my-slider">
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-1">
+                                    <a href="#">Learn more</a>
+                                </div>
+                                <!-- <br>
+                                <div>
+                                    <h3>Hawai</h3>
+                                    <p>Mavi</p>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-2">
+                                    <a href="#">Learn more</a>
+                                </div>
+                                <!-- <br>
+                                <div>
+                                    <h3>fiji</h3>
+                                    <p>Mavi</p>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-3">
+                                    <a href="#">Learn more</a>
+                                </div>
+                                <!-- <br>
+                                <div>
+                                    <h3>miami</h3>
+                                    <p>Mavi</p>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-4">
+                                    <a href="#">Learn more</a>
+                                </div>
+                                <!-- <br>
+                                <div>
+                                    <h3>costarica</h3>
+                                    <p>Mavi</p>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-5">
+                                    <a href="#">Learn more</a>
+                                </div>
+                                <!-- <br>
+                                <div>
+                                    <h3>brazil</h3>
+                                    <p>Mavi</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- video  -->
+
+
+    <div class="video-container">
+        <div class="video-arrow">
+            <a href="img/hotel-video2.mp4">
+                <h3>Watch the best room</h3><i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+        <video src="img/hotel-video2.mp4" loop controls></video>
+        <div class="video-watch">
+            <a href="img/hotel-video2.mp4"><i class="fas fa-play-circle"></i>Watch now</a>
+        </div>
+
+        <div class="video-caption">
+            <h2>The best <br> room</h2>
+            <div class="video-paragraph">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus recusandae odit
+                    reiciendis consectetur fugiat? Doloribus molestias itaque vitae aut nesciunt commodi,
+                    necessitatibus voluptatem id reiciendis, ea iusto tempora aperiam neque?</p>
+                <div><a href="learn">Read more</a><i class="fas fa-arrow-right"></i></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- rooms and suites -->
+    <div id="rooms">
+        <div class="room-container">
+            <div class="card-room">
+                <h2 id="popular-rooms">Our popular room</h2>
+                <img src="img/hotel-room2.png" alt="" class="img-card" id="img-card">
+                <p>Consultation</p>
+                <h2>Our room is always <br> clean</h2>
+                <div class="guest">
+                    <h4>Guest Room</h4>
+                    <p>Luxury room</p>
+                </div>
+            </div>
+            <div class="card-room">
+                <img src="img/hotel-room5.png" alt="" class="img-card">
+                <p>Consultation</p>
+                <h2>Our room is always <br> clean</h2>
+                <div class="guest">
+                    <h4>Guest Room</h4>
+                    <p>Luxury room</p>
+                </div>
+            </div>
+            <div class="card-room">
+                <img src="img/hotel-room1.webp" alt="" class="img-card" id="img-card">
+                <p>Consultation</p>
+                <h2>Our room is always <br> clean</h2>
+                <div class="guest">
+                    <h4>Guest Room</h4>
+                    <p>Luxury room</p>
+                </div>
+            </div>
+            <div class="card-room" id="the-next-font">
+                <a href="#"><i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="customer-review">
+        <h2>What does our customer say?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Expedita unde in quibusdam, et quia quos mollitia soluta nam <br>
+            cupiditate dolores cum velit repudiandae
+            sapiente vitae ratione nulla nesciunt necessitatibus sed?</p>
+    </div>
+
+
+    <!-- swiper for Testimonials -->
+    <div class="container">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/black7.jpg" alt="">
+                        <div class="review">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate sapiente, quia
+                            dignissimos molestiae laborum facere doloribus!
+                            Quidem et officiis dolorum temporibus vitae suscipit illum ad ullam. Itaque, temporibus
+                            aperiam.</p>
+                        <h3>Don Marcel</h3>
+                        <h4>CEO, Portland</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/black1.jpg" alt="">
+                        <div class="review">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate sapiente, quia
+                            dignissimos molestiae laborum facere doloribus!
+                            Quidem et officiis dolorum temporibus vitae suscipit illum ad ullam. Itaque, temporibus
+                            aperiam.</p>
+                        <h3>Mark Zuckerberg</h3>
+                        <h4>CEO, FACEBOOK</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/black4.jpg" alt="">
+                        <div class="review">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate sapiente, quia
+                            dignissimos molestiae laborum facere doloribus!
+                            Quidem et officiis dolorum temporibus vitae suscipit illum ad ullam. Itaque, temporibus
+                            aperiam.</p>
+                        <h3>OLive Okoro</h3>
+                        <h4>CEO, Centinary pulk</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/menpose1.png" alt="">
+                        <div class="review">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate sapiente, quia
+                            dignissimos molestiae laborum facere doloribus!
+                            Quidem et officiis dolorum temporibus vitae suscipit illum ad ullam. Itaque, temporibus
+                            aperiam.</p>
+                        <h3>OLive Okoro</h3>
+                        <h4>CEO, Centinary pulk</h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/menpose2.webp" alt="">
+                        <div class="review">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptate sapiente, quia
+                            dignissimos molestiae laborum facere doloribus!
+                            Quidem et officiis dolorum temporibus vitae suscipit illum ad ullam. Itaque, temporibus
+                            aperiam.</p>
+                        <h3>OLive Okoro</h3>
+                        <h4>CEO, Centinary pulk</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+
+    <!-- the footer starts here  -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-group">
+                <div class="footer-section">
+                    <img src="img/travel-icon2.png" alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla,
+                        ratione sapiente! Cupiditate nemo praesentium a
+                        numquam odit eius consequatur assumenda earum magni repellendus reiciendis,
+                        eaque, laboriosam consequuntur. Suscipit, pariatur dolorem.</p>
+                    <div class="icons-footer">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+                <ul class="footer-section">
+                    <h1>CRUISE-D</h1>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press Room</a></li>
+                    <li><a href="#">Availability</a></li>
+                </ul>
+            </div>
+            <div class="footer-group">
+                <ul class="footer-section">
+                    <h1>Resources</h1>
+                    <li><a href="#">Our Work</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+                <form action="input" class="message-us">
+                    <h1>Message us</h1>
+                    <input type="text" placeholder="Type your name">
+                    <input type="email" placeholder="example@gmail.com">
+                    <textarea name="message" id="" cols="30" rows="6" placeholder="message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="mickie">
+            @mickieNedu
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
