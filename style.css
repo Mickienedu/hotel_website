@@ -777,7 +777,7 @@ footer{
     
     .all-header section ul .fas{
         position: absolute;
-        top: 25px;
+        top: 15px;
         left: 25px;
         cursor: pointer;
     }
@@ -899,17 +899,15 @@ footer{
 }
 
 @media (max-width: 680px) {
+    .main-bg{
+        width: auto;
+    }
     .new-bg{
         display: flex;
-        justify-content: start;
+        justify-content: center;
         gap: 1rem;
         padding: 20px;
         width: auto;
-        position: relative;
-        background-color: white;
-        border-radius: 7px;
-        box-shadow: -1px 10px 9px -5px;
-        /* margin-left: 200px; */
     }
     .new-parent{
         display: grid;
@@ -943,6 +941,7 @@ footer{
         margin-left: -1rem;
         width: auto;
         padding: 15px;
+        background: none;
     }
    
     /* check availability button */
@@ -951,6 +950,7 @@ footer{
         width: 80px;
         font-size: 10px;
         height: 40px;
+        box-shadow: -1px 10px 9px -5px;
        
     }
 
@@ -996,18 +996,16 @@ footer{
   
    }
     /* video and caption */
+    .video-container .video-arrow{
+        box-shadow: -1px 10px 9px -5px;
+    }
     .video-container .video-arrow a{
-        display: grid;
+        display: flex;
         text-align: center;
         gap: 15px;
-        width: 180px;
+        width: 200px;
         padding: 4px;
-    }
-   
-    .video-container .video-watch a{
-        margin-top: -250px;
-        margin-left: 250px;
-       
+        /* box-shadow: -1px 10px 9px -5px; */
     }
     .video-container .video-caption{
         padding: 10px;
@@ -1025,6 +1023,7 @@ footer{
     .video-paragraph p{
         font-size: 14px;
         line-height: 25px;
+        padding: 10px;
     } 
     .video-paragraph div {
         width: 80px;
@@ -1107,10 +1106,9 @@ footer{
         font-size: 14px;
     }
     .new-bg{
-        gap: 0rem;
+        gap: 0.3rem;
         padding: 10px;
         width: auto;
-
     }
    
     .new-parent h6{
@@ -1137,7 +1135,30 @@ footer{
         width: 60px;
         font-size: 10px;
         height: 30px;
+        background-color: none;
        
+    }
+    /* controller caption */
+    .controller div h2{
+        color: white;
+        background: orange;
+        padding: 8px;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    #controls{
+        width: 60px;
+        padding: 4px;
+        border-radius: 8px;
+    
+    }
+    #controls i{
+        font-size: 0.7rem;
+    }
+    .previous, .next{
+        padding: 4px;
+        width: 20px;
     }
 }
 }
